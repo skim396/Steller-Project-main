@@ -1,0 +1,125 @@
+@charset "utf-8";
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+body
+{
+    background: linear-gradient(-45deg,#f4a38b,#f18eb4,#65c4e6,#ccccff,#ffffff,#1affd1,#ff9999);
+    background-size: 500% 500%;
+    position: relative;
+    animation: transitionIn 0.5s;
+    animation: change 8s ease-in-out infinite;
+    margin: 0;
+}
+header {
+    padding: 80px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin: 0 0 30px 0;
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+main
+{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    font-family: arial;
+}
+input:invalid {
+    background: rgba(252,111,113,0.88);
+}
+input
+{
+    background: rgba(255,255,255,1.00);
+}
+input,
+select {
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 1.10em;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.80);
+  padding: 25px;
+  font-family: Verdana;
+  color: white;
+  margin-top: 85px;
+}
+legend
+{
+    position: relative;
+    bottom:11px;
+    text-decoration: underline;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 20px;
+    padding: 0 0px;
+}
+fieldset
+{
+    margin: 20px 0;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.5)
+}
+img
+{
+    float: right;
+    display: none;
+    width: 3em;
+    height: auto
+}
+.cards {
+    margin: 0 auto;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 50% auto;
+    column-gap: 30px;
+    grid-row-gap: 20px;
+    margin-bottom: 25px;
+}
+.left_card {
+    text-align: right;
+    font-size: 1.25em;
+    margin-top: 6px;
+}
+.merge_card {
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+.submit {
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    margin: 15px;
+}
+#same_adr
+{
+    height: 20px;
+    width: 20px;
+}
+::placeholder
+{
+    color: white;
+}

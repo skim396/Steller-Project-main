@@ -1,0 +1,44 @@
+main
+{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+li
+{
+    font-size: 1.25em;
+    margin-right: 15px;
+}
+.nav_img
+{
+    width: 200px;
+    height: auto;
+    margin-right: 50px;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+footer
+{
+    margin-top: 120px;
+    width: 100%;
+}
+.about_img
+{
+    float: right;
+    width: 25%;
+    height: auto;
+    border-radius: 50%;
+}
+.home_img
+{
+    float: right;
+    filter: drop-shadow(3px 4px 4px silver);
+}
+.contact_form
+{
+    width: 75%;
+    margin: auto;
+    font-size: 1.20em;
+}

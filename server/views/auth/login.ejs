@@ -1,0 +1,138 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+
+
+   <!-- Message Area  -->
+   <%if(messages.length > 0) { %>
+    <div class="alert alert-danger">
+        <%= messages %>
+    </div>
+    <% } %>
+
+    <style> 
+      
+        /* Assign full width inputs*/ 
+        input[type=text], 
+        input[type=password] { 
+            width: 100%; 
+            padding: 12px 40px; 
+            margin: 8px 0; 
+            display: inline-block; 
+            border: 1px solid #ccc; 
+            box-sizing: border-box; 
+        } 
+          
+        /* Set a style for the buttons*/ 
+        button { 
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 14px 20px; 
+            margin: 8px 0; 
+            border: none; 
+            cursor: pointer; 
+            width: 100%; 
+        } 
+  
+        /* Set a hover effect for the button*/ 
+        button:hover { 
+            opacity: 0.8; 
+        } 
+  
+        /* Set extra style for the cancel button*/ 
+        .container { 
+            padding: 16px; 
+        } 
+      
+        .fontuser {
+            position: relative;
+        }
+          
+        .fontuser i{
+            position: absolute;
+            left: 15px;
+            top: 40px;
+            color: gray;
+        }
+          
+        .fontpassword {
+            position: relative;
+        }
+          
+        .fontpassword i{
+            position: absolute;
+            left: 15px;
+            top: 40px;
+            color: gray;
+
+            
+        }
+
+        .wrap {
+  width: 100%;
+  height: 100%;
+  
+  
+  background: rgba(0, 0, 0, 0.1);
+}
+    </style> 
+
+    <div id="container" class="container">
+    
+    <div class="wrap">
+        <div class="offset-md-4 col-md-4">
+            <div class="title text-center my-5">
+                <body style="background-color: azure;"></body>
+               <h1 style="color: black; font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Login</h1>
+            </div>
+            
+            <div id="container" class="container">
+           
+
+                <div class="container"> 
+                    <div class="fontuser">
+                        <form action="" method="POST" autocomplete="off">
+                        <label><b>Username</b></label> 
+                        <input type="text" 
+                                placeholder="Enter Username"
+                                name="uname" required> 
+                        <i class="fa fa-user fa-lg"></i>
+                    </div>
+                      
+                    <div class="fontpassword">
+                        <label><b>Password</b></label> 
+                        <input type="password"
+                                placeholder="Enter Password"
+                                name="psw" required> 
+                        <i class="fa fa-key fa-lg"></i>
+                    </div>     
+                      
+                   
+    
+
+                <div class="keep_check">
+                    <input type="checkbox" id="keep" name="nvlong"
+                           class="input_keep"  value="off">
+                    <label for="keep"
+                           class="keep_text">Stay Signed in</label>
+                </div>
+<fieldset class="form-group text-center my-5">
+                    <input type="submit" class="btn btn-primary mx-3" value="Login">
+                    <a href="/">
+                        <input type="button" class="btn btn-secondary mx-3" value="Cancel">
+                    </a>
+                </fieldset>
+            </form>
+            
+            <ul class="find_wrap" id="find_wrap">
+                    <p style="font-size: 12px; text-align: center;"> Forgot your <a target="_blank" id="pwinquiry"  class="en_find_text">Password</a> or <a target="_blank" id="idinquiry" class="en_find_text">Username?</a>&nbsp; / <a target="_blank" id="join" href="/register" class="en_find_text">Sign up</a></li>
+               </p> </ul>
+                
+            </div>
+        
+        </div>
+        </div>        
+    </div>
+</div>
+
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %>

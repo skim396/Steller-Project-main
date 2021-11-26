@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment 4</title>
+<link href="assignment4.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Membership Registration</h1>
+    </header><main>
+    <form id="form">
+        <fieldset>
+            <legend>Please Complete All the Fields Below</legend>
+            <div class="cards">
+                <div class="left_card">
+                    <label for="fName">First Name</label>
+                </div><div class="ryt_card">
+                    <input type="text" id="fName" required placeholder="First Name" oninput="resetter()">
+                 </div>
+                
+                <div class="left_card">
+                    <label for="lName">Last Name</label>
+                 </div><div class="ryt_card">
+                    <input type="text" id="lName" required placeholder="Last Name" oninput="resetter()">
+                </div>
+                
+                <div class="left_card">
+                    <label for="adr">Address</label>
+                </div><div class="ryt_card">
+                    <input type="text" id="adr" required placeholder="Address" oninput="resetter()">
+                </div>
+                <div class="left_card">
+                    <label for="city">City</label>
+                </div><div class="ryt_card">
+                    <input type="text" id="city" required placeholder="City" oninput="resetter()">
+                </div>
+                
+                <div class="left_card">
+                    <label for="pCode">Postal Code</label>
+                </div><div class="ryt_card" style="margin-bottom: 0px;">
+                    <input type="text" id="pCode" required placeholder="A0A0A0" oninput="resetter()">
+                </div>
+                <div class="left_card">
+                    <img src="images/tick.png" alt="tick" id="pCodeImg" />
+                </div>
+                <div class="rytCard">
+                    <p id="pCodeP" style="margin-top: 0px; font-size: 1em; font-style: italic;">Postal Code must contain upper case letters only</p>
+                </div>
+                <div class="left_card">
+                    <label for="province">Province</label>
+                </div><div class="ryt_card">
+                    <input type="text" id="province" required placeholder="QC/ON/MN/SK/AB/BC" oninput="resetter()">
+                </div>
+                
+                <div class="left_card">
+                    <label for="age">Age</label>
+                </div><div class="ryt_card">
+                    <input type="number" id="age" required placeholder="Must be Above 18 years" oninput="resetter()">
+                </div>
+                <div class="left_card">
+                    <label for="pass">Password</label>
+                </div><div class="ryt_card">
+                    <input type="password" id="pass" required placeholder="Password" oninput="resetter()">
+                </div>
+                <div class="left_card">
+                    <img src="images/tick.png" alt="tick" id="passImg" />
+                </div>
+                <div class="rytCard">
+                    <p id="passwdP" style="margin-top: 0px; font-size: 1em; font-style: italic;">Password must be atleast 6 characters long and contain one-digit and one upper-case character.</p>
+                </div>
+                <div class="left_card">
+                    <label for="confPass">Confirm Password</label>
+                </div><div class="ryt_card">
+                    <input type="password" id="confPass" required placeholder="Confirm Password" oninput="resetter()">
+                </div>
+                <div class="left_card">
+                    <label for="email">Email</label>
+                </div><div class="ryt_card">
+                    <input type="email" id="email" required placeholder="Email" oninput="resetter()">
+                </div>
+            
+            
+            <div class="merge_card">
+                <input type="submit" id="submit" class="submit" value="Register">
+                <input type="reset" id="reset" class="submit" value="Clear All Fields">
+            </div>
+            </div>
+                </fieldset>
+        </form>
+    </main>
+    <footer>
+        <h4>Assignment 4</h4>
+  <h5>
+    &copy;&nbsp;Copyright Akshit Narang #301177669, COMP125-004, Semester-2 </h5>
+</footer>
+    <script type="text/javascript" src="assignment4.js"></script>
+</body>
+</html>

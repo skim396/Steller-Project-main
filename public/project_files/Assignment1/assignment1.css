@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+  font-family: verdana;
+  margin: 0px;
+  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+}
+header {
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 30px;
+}
+main {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 1.075rem;
+}
+input, select {
+  border-radius: 8px;
+  font-size: 1.2rem;
+  width: 150px;
+}
+nav {
+  background-color: black;
+  opacity: 0.8;
+  padding: 20px;
+  position: sticky;
+}
+nav a {
+  text-decoration: none;
+  background-color: black;
+  color: #f2f2f2;
+  padding: 20px 15px;
+  font-size: 18px;
+}
+nav a:hover {
+  background: #ddd;
+  color: black;
+  padding: 20px 15px;
+  font-size: 18px;
+}
+table {
+  width: 100%;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.80);
+  padding: 25px;
+  font-family: Verdana;
+  color: white;
+  margin-top: 85px;
+}
+.table3 input {
+  width: auto;
+}
+.hd {
+  background-color: black;
+  color: white;
+  padding: 100px 0;
+  margin: 0;
+}
+.rytAlign {
+  text-align: right;
+  padding: 10px 10px 10px 0;
+}
+.leftAlign {
+  text-align: left;
+  width: 75%
+}
+.table2 {
+  margin-bottom: 30px;
+}
+.table2 td {
+  width: 25%;
+}
+.radioMargin {
+  display: inline-block;
+  margin: 10px 0;
+}
+.calcPart {
+  text-align: center;
+  margin-top: 30px;
+}
+.bmrResult {
+  display: inline;
+  font-size: 1.4rem;
+  font-style: italic;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.35);
+}
+.btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  width: 250px;
+  background-color: black;
+  color: white;
+  font-size: 1.35rem;
+}

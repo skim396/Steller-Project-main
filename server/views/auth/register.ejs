@@ -1,0 +1,157 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+
+<main class="container">
+    <!-- Message Area  -->
+ 
+ <%if(messages.length > 0) { %>
+     <div class="alert alert-danger">
+         <%= messages %>
+     </div>
+ <% } %>
+
+ 
+ <style> 
+      
+    /* Assign full width inputs*/ 
+    input[type=text], 
+    input[type=password] { 
+        width: 100%; 
+        padding: 12px 40px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+      
+    /* Set a style for the buttons*/ 
+    button { 
+        background-color: #4CAF50; 
+        color: white; 
+        padding: 14px 20px; 
+        margin: 8px 0; 
+        border: none; 
+        cursor: pointer; 
+        width: 100%; 
+    } 
+
+    /* Set a hover effect for the button*/ 
+    button:hover { 
+        opacity: 0.8; 
+    } 
+
+    /* Set extra style for the cancel button*/ 
+    .container { 
+        padding: 16px; 
+    } 
+  
+    .fontuser {
+        position: relative;
+    }
+      
+    .fontuser i{
+        position: absolute;
+        left: 15px;
+        top: 50px;
+        color: gray;
+    }
+      
+    .fontpassword {
+        position: relative;
+    }
+      
+    .fontpassword i{
+        position: absolute;
+        left: 15px;
+        top: 50px;
+        color: gray;
+
+      }   
+
+      .fontmail {
+        position: relative;
+    }
+      
+    .fontmail i{
+        position: absolute;
+        left: 15px;
+        top: 35px;
+        color: gray;
+
+      }   
+
+
+      .fontname {
+        position: relative;
+    }
+      
+    .fontname i{
+        position: absolute;
+        left: 15px;
+        top: 50px;
+        color: gray;
+
+      } 
+    .wrap {
+width: 100%;
+height: 100%;
+
+
+background: rgba(0, 0, 0, 0.1);
+}
+</style>
+ 
+<div class="wrap">
+    <div class="offset-md-4 col-md-4">
+        <div class="title text-center my-5">
+            <body style="background-color: azure;"></body>
+           <h1 style="color: black; font-family :Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Registration</h1>
+        </div>
+        <div class="container"> 
+            <div class="fontuser">
+        <form method="POST" autocomplete="off">
+            <fieldset class="form-group my-3">
+                <label for="username"><b>Username </label></label>
+                <input type="text" class="form-control"
+                name="username" placeholder="Enter username"
+                id="username" required autofocus>
+                <i class="fa fa-user fa-lg"></i>
+            </fieldset>
+            <div class="fontpassword">
+            <fieldset class="form-group my-3">
+                <label for="password"><b></b>Password </label>
+                <input type="password" class="form-control"
+                name="password" placeholder="Enter password"
+                id="password" required>
+                <i class="fa fa-key fa-lg"></i>
+            </fieldset>
+            <div class="fontmail">
+            <fieldset class="form-group my-3">
+               <label for="email"><b></b></label>Email </label>
+               <input type="email" class="form-control"
+               name="email" placeholder="     Enter Email Address"
+               id="email" required autofocus>
+               <i class="fas fa-envelope-open-text"></i>
+           </fieldset>
+           <div class="fontname">
+           <fieldset class="form-group my-3">
+               <label for="displayName"><b></b>Display Name </label>
+               <input type="text" class="form-control"
+               name="displayName" placeholder="Enter Display Name"
+               id="displayName" required autofocus>
+               <i class="fas fa-signature"></i>
+           </fieldset>
+
+
+            <fieldset class="form-group text-center my-5">
+                <input type="submit" class="btn btn-primary mx-3" value="Register">
+                <a href="/">
+                    <input type="button" class="btn btn-secondary mx-3" value="Cancel">
+                </a>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</main>
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %>

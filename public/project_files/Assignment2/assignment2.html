@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assignment2</title>
+<link href="assignment2.css" rel="stylesheet" type="text/css">
+</head>
+
+  <body>
+      <header>
+      <img src="Images/topImg.png" class="topImg" alt="Table Creator Image">
+          <hr>
+      </header>
+      <main>
+          <form method="post"> 
+              <table class="table1">
+        <tbody class="table1Body">
+          <tr>
+            <td class="left">Rows</td>
+            <td><input type="number" id="row"></td>
+          </tr>
+          <tr>
+            <td>Columns</td>
+            <td><input type="number" id="column"></td>
+          </tr>
+          <tr>
+            <td>Table's Background Colour</td>
+            <td><input type="color" id="bgColor" value="#FFFFFF" class="color"></td>
+          </tr>
+        </tbody>
+      </table>
+              <input type="button" id="tablebtn" value="Create Table" class="btn">
+          </form>
+            <div class="table" id="tableOut">
+              </div>
+
+      </main>
+      
+<script src="assignment2_tables.js" defer></script>
+      <footer>
+  <p>
+    &copy;&nbsp;Copyright Akshit Narang #301177669, COMP125-004, Semester-2 </p>
+</footer>
+  </body>
+</html>
